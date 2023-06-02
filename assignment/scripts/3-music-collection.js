@@ -39,11 +39,15 @@ showCollection(collection);
 
 // Question 4 : Add a function named `findByArtist`. This function should:
 function findByArtist(artist){
+  // Storage
   let storage = [];
     for(let singer of collection){
+      // Find the matching artist 
       if(singer.albumtArtist === artist){
+        // Push to empty array
         storage.push(singer)
       } else {
+        // If not found return an empty array
         storage = [];
       }
       return storage;
